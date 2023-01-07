@@ -1,0 +1,22 @@
+{
+    "test":
+    {
+        "linked": ["test", "article1", "treetrans"],
+        "info": "this is a test"
+    },
+    "biology":
+    {
+        "linked": [],
+        "info": ""
+    },
+    "damage":
+    {
+        "linked": ["test"],
+        "info": ""
+    },
+    "grooming":
+    {
+        "linked": [],
+        "info": ""
+    }
+}

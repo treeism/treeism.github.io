@@ -7,7 +7,7 @@
     "biology":
     {
         "linked": ["biof"],
-        "info": ""
+        "info": "Biological facts"
     },
     "damage":
     {

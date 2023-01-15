@@ -3,7 +3,7 @@ const urlParams = new URLSearchParams(queryString);
 
 function notFoundEx()
 {
-    document.getElementById("results").innerHTML = "<div class=\"boxc\" style=\"min-height: 80%;\"><div style=\"padding-top: 64px; padding-bottom: 64px; margin: 0 auto; width: 420px;\"><h1>There are no articles here</h1><p>Try with a different topic</p></div></div>";
+    document.getElementById("results").innerHTML = "<div class=\"boxc\" style=\"min-height: 80%;\"><div class=\"ex-hbox\"><h1>There are no articles here</h1><p>Try with a different topic</p></div></div>";
 }
 
 function addResEl(id, article)
@@ -32,7 +32,7 @@ function processResult(article)
 
 fetch("./docuplex.json").then(response => response.json()).then(data =>
 {
-    document.getElementById("topic-indicator").innerHTML = "Topic: " + urlParams.get("t");
+    document.getElementById("topic-indicator").innerHTML = /*"Topic: " + */urlParams.get("t");
     try
     {
         const topic = data[urlParams.get("t")];

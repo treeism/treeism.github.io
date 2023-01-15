@@ -53,7 +53,7 @@ fetch("./articles/" + urlParams.get("id") + ".json")
             document.getElementById("doc-ttl").innerHTML = "<h2>Loading article...</h2>";
             document.getElementById("doc-txt").innerHTML = "";
             document.getElementById("doc-crd").innerHTML = ``;
-            document.getElementById("doc-ex").innerHTML = "<div style=\"padding-top: 64px; margin: 0 auto; width: 420px;\"><h1>This content is protected</h1><p>This article is currently unavaible</p></div>";
+            document.getElementById("doc-ex").innerHTML = "<div class=\"ex-hbox\"><h1>This content is protected</h1><p>This article is currently unavaible</p></div>";
         }
     }
     catch
@@ -61,14 +61,14 @@ fetch("./articles/" + urlParams.get("id") + ".json")
         document.getElementById("doc-ttl").innerHTML = "<h2>Loading article...</h2>";
         document.getElementById("doc-txt").innerHTML = "";
         document.getElementById("doc-crd").innerHTML = ``;
-        document.getElementById("doc-ex").innerHTML = "<div style=\"padding-top: 64px; margin: 0 auto; width: 420px;\"><h1>This article doesn't exist</h1><p>Please double check the article ID</p></div>";
+        document.getElementById("doc-ex").innerHTML = "<div class=\"ex-hbox\"><h1>This article doesn't exist</h1><p>Please double check the article ID</p></div>";
     }
     }).catch
     (error => {
         document.getElementById("doc-ttl").innerHTML = "<h2>Loading article...</h2>";
         document.getElementById("doc-txt").innerHTML = "";
         document.getElementById("doc-crd").innerHTML = ``;
-        document.getElementById("doc-ex").innerHTML = "<div style=\"padding-top: 64px; margin: 0 auto; width: 420px;\"><h1>This article doesn't exist</h1><p>Please double check the article ID</p></div>";
+        document.getElementById("doc-ex").innerHTML = "<div class=\"ex-hbox\"><h1>This article doesn't exist</h1><p>Please double check the article ID</p></div>";
     
     });
   
